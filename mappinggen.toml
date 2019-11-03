@@ -1,0 +1,10 @@
+nameformat.defaultpackage = "net/minecraft/"
+nameformat.class = "C_{classid}_{obfname}"
+#nameformat.innerclass = "C_{classid}_{obfname}"
+nameformat.field = "field_{fmid}_{obfname}"
+nameformat.enum = "ENUM_{enumid}_{obfname}"
+nameformat.method = "func_{fmid}_{obfname}"
+#nameformat.lambda = "func_{fmid}_{obfname}"
+nameformat.access = "access${accessid}" # dont eat uids for access methods; could just disable renames too
+
+ids.classid = 100000

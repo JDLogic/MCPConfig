@@ -1,0 +1,34 @@
+{
+    "depigifier": {
+        "version": "net.minecraftforge:depigifier:1.0.3:fatjar",
+        "args": ["--oldPG", "{oldPG}", "--newPG", "{newPG}", "--out", "{out}"]
+    },
+    "mappinggenerator": {
+        "version": "com.jdlogic:MappingGenerator:0.0.0:fatjar",
+        "args": ["--in", "{input}", "--cfg", "{conf}", "--mapping", "{mapping}", "--libs", "{libs}", "--log", "{log}", "--out", "{output}"]
+    },
+    "mcinjector": {
+        "version": "de.oceanlabs.mcp:mcinjector:3.7.10:fatjar",
+        "args": ["--in", "{input}", "--out", "{output}", "--log", "{log}", "--level=FINE", "--lvt=LVT", "--exc", "{exceptions}", "--acc", "{access}", "--ctr", "{constructors}", "--overrides", "{overrides}"]
+    },
+    "fernflower": {
+        "version": "net.minecraftforge:forgeflower:1.5.380.34-fix-stack-vars",
+        "args": ["-din=1", "-rbr=1", "-dgs=1", "-asc=1", "-rsy=1", "-iec=1", "-jvn=1", "-log=TRACE", "-cfg", "{libraries}", "{input}", "{output}"],
+        "jvmargs": ["-Xmx4G"]
+    },
+    "merge": {
+        "version": "net.minecraftforge:mergetool:1.0.6:fatjar",
+        "args": ["--client", "{client}", "--server", "{server}", "--ann", "{version}", "--output", "{output}", "--inject", "false"],
+        "jvmargs": []
+    },
+    "rename": {
+        "version": "net.md-5:SpecialSource:1.8.3:shaded",
+        "args": ["--in-jar", "{input}", "--out-jar", "{output}", "--srg-in", "{mappings}"],
+        "repo": "http://repo1.maven.org/maven2/"
+    },
+    "libraries": {
+        "client": ["com.google.code.findbugs:jsr305:3.0.1"],
+        "server": ["com.google.code.findbugs:jsr305:3.0.1"],
+        "joined": ["com.google.code.findbugs:jsr305:3.0.1", "net.minecraftforge:mergetool:1.0.9:api"]
+    }
+}
