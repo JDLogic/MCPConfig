@@ -1,0 +1,20 @@
+--- a/net/minecraft/world/chunk/storage/C_1067_caw.java
++++ b/net/minecraft/world/chunk/storage/C_1067_caw.java
+@@ -46,7 +46,7 @@
+                if (p_226725_2_ != null) {
+                   p_226721_3_.completeExceptionally(p_226725_2_);
+                } else {
+-                  p_226721_3_.complete((Object)null);
++                  p_226721_3_.complete(null);
+                }
+ 
+             });
+@@ -103,7 +103,7 @@
+                return new CompletableFuture[p_226716_0_];
+             }));
+             completablefuture.whenComplete((p_226724_1_, p_226724_2_) -> {
+-               p_226723_1_.complete((Object)null);
++               p_226723_1_.complete(null);
+             });
+          };
+       });

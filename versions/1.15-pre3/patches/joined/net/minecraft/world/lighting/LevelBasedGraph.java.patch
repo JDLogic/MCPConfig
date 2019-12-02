@@ -1,0 +1,11 @@
+--- a/net/minecraft/world/lighting/LevelBasedGraph.java
++++ b/net/minecraft/world/lighting/LevelBasedGraph.java
+@@ -81,7 +81,7 @@
+    }
+ 
+    public void func_227142_a_(LongPredicate p_227142_1_) {
+-      this.field_215488_c.keySet().forEach((p_227143_2_) -> {
++      this.field_215488_c.keySet().forEach((long p_227143_2_) -> {
+          if (p_227142_1_.test(p_227143_2_)) {
+             this.func_215479_e(p_227143_2_);
+          }

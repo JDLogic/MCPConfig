@@ -1,0 +1,19 @@
+--- a/net/minecraft/src/C_1276_jk.java
++++ b/net/minecraft/src/C_1276_jk.java
+@@ -11,6 +11,16 @@
+    private final int field_229393_f_;
+    private final long field_229394_g_;
+ 
++   public C_1276_jk(String field_229388_a_, String field_229389_b_, String field_229390_c_, boolean field_229391_d_, Consumer<C_1262_iv> field_229392_e_, int field_229393_f_, long field_229394_g_) {
++      this.field_229388_a_ = field_229388_a_;
++      this.field_229389_b_ = field_229389_b_;
++      this.field_229390_c_ = field_229390_c_;
++      this.field_229391_d_ = field_229391_d_;
++      this.field_229392_e_ = field_229392_e_;
++      this.field_229393_f_ = field_229393_f_;
++      this.field_229394_g_ = field_229394_g_;
++   }
++
+    public void func_229396_a_(C_1262_iv p_229396_1_) {
+       this.field_229392_e_.accept(p_229396_1_);
+    }

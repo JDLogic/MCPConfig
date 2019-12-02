@@ -1,0 +1,16 @@
+--- a/net/minecraft/src/C_1258_iq.java
++++ b/net/minecraft/src/C_1258_iq.java
+@@ -8,6 +8,13 @@
+    private final BlockPos field_229194_b_;
+    private final long field_229195_c_;
+ 
++   public C_1258_iq(BlockPos field_229193_a_, BlockPos field_229194_b_, long field_229195_c_) {
++      super("");
++      this.field_229193_a_ = field_229193_a_;
++      this.field_229194_b_ = field_229194_b_;
++      this.field_229195_c_ = field_229195_c_;
++   }
++
+    public String getMessage() {
+       String s = "" + this.field_229193_a_.func_177958_n() + "," + this.field_229193_a_.func_177956_o() + "," + this.field_229193_a_.func_177952_p() + " (relative: " + this.field_229194_b_.func_177958_n() + "," + this.field_229194_b_.func_177956_o() + "," + this.field_229194_b_.func_177952_p() + ")";
+       return super.getMessage() + " at " + s + " (t=" + this.field_229195_c_ + ")";

@@ -1,4 +1,4 @@
-a net/minecraft/src/C_1000_a
+a net/minecraft/client/renderer/C_1000_a
 	a field_225706_a_
 	b field_225707_b_
 	c field_225708_c_
@@ -85,7 +85,7 @@ c net/minecraft/client/renderer/Quaternion
 	equals (Ljava/lang/Object;)Z equals
 	hashCode ()I hashCode
 	toString ()Ljava/lang/String; toString
-d net/minecraft/src/C_1165_d
+d net/minecraft/client/renderer/C_1165_d
 	a field_227653_a_
 	b field_227654_b_
 	c field_227655_c_
@@ -14564,7 +14564,7 @@ ahs net/minecraft/util/datafix/versions/V1931
 	a (Lcom/mojang/datafixers/schemas/Schema;)Lcom/mojang/datafixers/types/templates/TypeTemplate; func_219889_a
 	a (Lcom/mojang/datafixers/schemas/Schema;Ljava/util/Map;Ljava/lang/String;)V func_219888_a
 	registerEntities (Lcom/mojang/datafixers/schemas/Schema;)Ljava/util/Map; registerEntities
-aht net/minecraft/src/C_1009_aht
+aht net/minecraft/util/datafix/versions/C_1009_aht
 	a (Lcom/mojang/datafixers/schemas/Schema;)Lcom/mojang/datafixers/types/templates/TypeTemplate; func_225825_a_
 	a (Lcom/mojang/datafixers/schemas/Schema;Ljava/util/Map;Ljava/lang/String;)V func_225826_a_
 	b (Lcom/mojang/datafixers/schemas/Schema;)Lcom/mojang/datafixers/types/templates/TypeTemplate; func_225827_b_
@@ -34065,7 +34065,7 @@ byg$a net/minecraft/block/BlockState$Cache
 	d field_222500_d
 	e field_222501_e
 	f field_222502_f
-	g field_225501_g
+	g field_229612_g
 	h field_222503_g
 	i field_225493_i
 	j field_225494_j
@@ -35322,7 +35322,7 @@ cav net/minecraft/world/chunk/storage/ChunkLoader
 	e (Lbje;)Ljt; func_226705_e_
 	i ()V func_226706_i_
 	close ()V close
-caw net/minecraft/src/C_1067_caw
+caw net/minecraft/world/chunk/storage/C_1067_caw
 	a field_226707_a_
 	b field_226708_b_
 	c field_226709_c_
@@ -35357,8 +35357,8 @@ caw net/minecraft/src/C_1067_caw
 	g ()V func_226738_g_
 	h ()Z func_226739_h_
 	close ()V close
-caw$1 net/minecraft/src/C_1067_caw$1
-caw$a net/minecraft/src/C_1067_caw$C_1068_a
+caw$1 net/minecraft/world/chunk/storage/C_1067_caw$1
+caw$a net/minecraft/world/chunk/storage/C_1067_caw$C_1068_a
 	a field_226740_a_
 	b field_226741_b_
 	a (Lcaw$a;)Ljt; func_226742_a_
@@ -37259,7 +37259,7 @@ ciy net/minecraft/world/gen/placement/CaveEdge
 	a (Lbju;Lbzx;Ljava/util/Random;Lcgh;Lfk;)Ljava/util/stream/Stream; func_212848_a_
 	a (Lbju;Lbzx;Ljava/util/Random;Lciz;Lfk;)Ljava/util/stream/Stream; func_212848_a_
 	a (Ljava/util/BitSet;Ljava/util/Random;Lciz;I)Z func_227087_a_
-ciz net/minecraft/src/C_1131_ciz
+ciz net/minecraft/world/gen/placement/C_1131_ciz
 	a field_227088_a_
 	b field_227089_b_
 	a (Lcom/mojang/datafixers/Dynamic;)Lciz; func_227090_a_
@@ -41343,14 +41343,14 @@ cua$a net/minecraft/world/storage/loot/conditions/TableBonus$Serializer
 	a (Lcom/google/gson/JsonObject;Lcuj;Lcom/google/gson/JsonSerializationContext;)V func_186605_a
 	a (Lsm;)Lcom/google/gson/JsonParseException; func_216296_a
 	b (Lcom/google/gson/JsonObject;Lcom/google/gson/JsonDeserializationContext;)Lcuj; func_186603_b
-cub net/minecraft/src/C_1145_cub
+cub net/minecraft/world/storage/loot/conditions/C_1145_cub
 	a field_227238_a_
 	b field_227239_b_
 	a (Lcru;)Z test
 	a (Lcsd;)V func_225580_a_
 	a (Lcub;)Lsm; func_227240_a_
 	test (Ljava/lang/Object;)Z test
-cub$a net/minecraft/src/C_1145_cub$C_1146_a
+cub$a net/minecraft/world/storage/loot/conditions/C_1145_cub$C_1146_a
 	a (Lcom/google/gson/JsonObject;Lcom/google/gson/JsonDeserializationContext;)Lcub; func_186603_b
 	a (Lcom/google/gson/JsonObject;Lcub;Lcom/google/gson/JsonSerializationContext;)V func_186605_a
 	a (Lcom/google/gson/JsonObject;Lcuj;Lcom/google/gson/JsonSerializationContext;)V func_186605_a
@@ -42912,7 +42912,7 @@ cxm net/minecraft/client/Monitor
 	toString ()Ljava/lang/String; toString
 cxn net/minecraft/client/renderer/IMonitorFactory
 	createMonitor (J)Lcxm; createMonitor
-cxo net/minecraft/client/renderer/texture/NativeImage
+cxo com/mojang/blaze3d/platform/NativeImage
 	a field_227462_a_
 	b field_209272_a
 	c field_211680_b
@@ -42961,8 +42961,8 @@ cxo net/minecraft/client/renderer/texture/NativeImage
 	h ()V func_195696_g
 	close ()V close
 	toString ()Ljava/lang/String; toString
-cxo$1 net/minecraft/client/renderer/texture/NativeImage$1
-cxo$a net/minecraft/client/renderer/texture/NativeImage$PixelFormat
+cxo$1 com/mojang/blaze3d/platform/NativeImage$1
+cxo$a com/mojang/blaze3d/platform/NativeImage$PixelFormat
 	a RGBA
 	b RGB
 	c LUMINANCE_ALPHA
@@ -42995,7 +42995,7 @@ cxo$a net/minecraft/client/renderer/texture/NativeImage$PixelFormat
 	i ()Z func_211654_w
 	values ()[Lcxo$a; values
 	valueOf (Ljava/lang/String;)Lcxo$a; valueOf
-cxo$b net/minecraft/client/renderer/texture/NativeImage$PixelFormatGLCode
+cxo$b com/mojang/blaze3d/platform/NativeImage$PixelFormatGLCode
 	a RGBA
 	b RGB
 	c LUMINANCE_ALPHA
@@ -43006,7 +43006,7 @@ cxo$b net/minecraft/client/renderer/texture/NativeImage$PixelFormatGLCode
 	a ()I func_211672_a
 	values ()[Lcxo$b; values
 	valueOf (Ljava/lang/String;)Lcxo$b; valueOf
-cxo$c net/minecraft/client/renderer/texture/NativeImage$WriteCallback
+cxo$c com/mojang/blaze3d/platform/NativeImage$WriteCallback
 	a field_209268_a
 	b field_209269_b
 	a ()V func_209267_a
@@ -50766,7 +50766,7 @@ dnf net/minecraft/client/renderer/entity/model/RendererModel
 	a (Ljava/util/Random;)Ldnf$a; func_227992_a_
 	b (II)Ldnf; func_78787_b
 	b (Ldnf;)V func_78792_a
-dnf$a net/minecraft/client/renderer/model/ModelBox
+dnf$a net/minecraft/client/renderer/entity/model/RendererModel$ModelBox
 	a field_78252_a
 	b field_78250_b
 	c field_78251_c
@@ -50775,10 +50775,10 @@ dnf$a net/minecraft/client/renderer/model/ModelBox
 	f field_78246_f
 	g field_78254_i
 	a (Ldnf$a;)[Ldnf$b; func_227993_a_
-dnf$b net/minecraft/client/renderer/model/TexturedQuad
+dnf$b net/minecraft/client/renderer/entity/model/RendererModel$TexturedQuad
 	a field_78239_a
 	b field_227994_b_
-dnf$c net/minecraft/client/renderer/model/PositionTextureVertex
+dnf$c net/minecraft/client/renderer/entity/model/RendererModel$PositionTextureVertex
 	a field_78243_a
 	b field_78241_b
 	c field_78242_c
@@ -53716,7 +53716,7 @@ dte$a net/minecraft/client/renderer/chunk/ChunkRenderDispatcher$C_1228_a
 	c $VALUES
 	values ()[Ldte$a; values
 	valueOf (Ljava/lang/String;)Ldte$a; valueOf
-dte$b net/minecraft/client/renderer/chunk/CompiledChunk
+dte$b net/minecraft/client/renderer/chunk/ChunkRenderDispatcher$CompiledChunk
 	a field_178502_a
 	b field_178500_b
 	c field_178501_c
@@ -53735,9 +53735,9 @@ dte$b net/minecraft/client/renderer/chunk/CompiledChunk
 	b (Ldte$b;)Ljava/util/Set; func_228652_b_
 	c (Ldte$b;)Ljava/util/List; func_228653_c_
 	d (Ldte$b;)Lcyd$b; func_228654_d_
-dte$b$1 net/minecraft/client/renderer/chunk/CompiledChunk$1
+dte$b$1 net/minecraft/client/renderer/chunk/ChunkRenderDispatcher$CompiledChunk$1
 	a (Lfp;Lfp;)Z func_178495_a
-dte$c net/minecraft/client/renderer/chunk/ChunkRender
+dte$c net/minecraft/client/renderer/chunk/ChunkRenderDispatcher$ChunkRender
 	a field_178590_b
 	b field_178591_c
 	c field_228655_c_
@@ -53778,7 +53778,7 @@ dte$c net/minecraft/client/renderer/chunk/ChunkRender
 	j ()Ldte$c$a; func_178574_d
 	k ()V func_228671_k_
 	l ()V func_178585_h
-dte$c$a net/minecraft/client/renderer/chunk/ChunkRenderTask
+dte$c$a net/minecraft/client/renderer/chunk/ChunkRenderDispatcher$ChunkRender$ChunkRenderTask
 	a field_188229_e
 	b field_178554_h
 	c field_228672_c_
@@ -53786,7 +53786,7 @@ dte$c$a net/minecraft/client/renderer/chunk/ChunkRenderTask
 	a (Ldqf;)Ljava/util/concurrent/CompletableFuture; func_225628_a_
 	a (Ldte$c$a;)I compareTo
 	compareTo (Ljava/lang/Object;)I compareTo
-dte$c$b net/minecraft/client/renderer/chunk/ChunkRender$C_1229_b
+dte$c$b net/minecraft/client/renderer/chunk/ChunkRenderDispatcher$ChunkRender$C_1229_b
 	d field_228673_d_
 	e field_228674_e_
 	a ()V func_225627_a_
@@ -53795,7 +53795,7 @@ dte$c$b net/minecraft/client/renderer/chunk/ChunkRender$C_1229_b
 	a (Ldte$b;Ljava/util/List;Ljava/lang/Throwable;)Ldte$a; func_228676_a_
 	a (Ldte$b;Ljava/util/Set;Lbwi;)V func_228677_a_
 	a (Ljava/util/List;Ldqf;Ldqy;)V func_228678_a_
-dte$c$c net/minecraft/client/renderer/chunk/ChunkRender$C_1230_c
+dte$c$c net/minecraft/client/renderer/chunk/ChunkRenderDispatcher$ChunkRender$C_1230_c
 	d field_228679_d_
 	e field_228680_e_
 	a ()V func_225627_a_

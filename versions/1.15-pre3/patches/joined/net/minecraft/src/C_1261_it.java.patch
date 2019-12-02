@@ -1,0 +1,12 @@
+--- a/net/minecraft/src/C_1261_it.java
++++ b/net/minecraft/src/C_1261_it.java
+@@ -6,4 +6,9 @@
+    @Nullable
+    public final Long field_229223_a_;
+    public final Runnable field_229224_b_;
++
++   C_1261_it(@Nullable Long field_229223_a_, Runnable field_229224_b_) {
++      this.field_229223_a_ = field_229223_a_;
++      this.field_229224_b_ = field_229224_b_;
+ }
++}

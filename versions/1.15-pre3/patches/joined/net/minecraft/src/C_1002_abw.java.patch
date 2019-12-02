@@ -1,0 +1,29 @@
+--- a/net/minecraft/src/C_1002_abw.java
++++ b/net/minecraft/src/C_1002_abw.java
+@@ -22,7 +22,7 @@
+    }
+ 
+    public static <T extends Comparable<T>> C_1002_abw<T> func_225781_a_(int p_225781_0_) {
+-      return new C_1002_abw<>(p_225781_0_, Comparator.naturalOrder());
++      return new C_1002_abw<>(p_225781_0_, Comparator.<T>naturalOrder());
+    }
+ 
+    private static <T> T[] func_225786_a_(Object[] p_225786_0_) {
+@@ -96,7 +96,7 @@
+    }
+ 
+    public boolean remove(Object p_remove_1_) {
+-      int i = this.func_225791_c_(p_remove_1_);
++      int i = this.func_225791_c_((T)p_remove_1_);
+       if (i >= 0) {
+          this.func_225792_d_(i);
+          return true;
+@@ -110,7 +110,7 @@
+    }
+ 
+    public boolean contains(Object p_contains_1_) {
+-      int i = this.func_225791_c_(p_contains_1_);
++      int i = this.func_225791_c_((T)p_contains_1_);
+       return i >= 0;
+    }
+ 

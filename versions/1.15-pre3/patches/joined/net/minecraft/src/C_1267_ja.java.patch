@@ -1,0 +1,14 @@
+--- a/net/minecraft/src/C_1267_ja.java
++++ b/net/minecraft/src/C_1267_ja.java
+@@ -8,6 +8,11 @@
+    private final List<C_1261_it> field_229303_b_;
+    private long field_229304_c_;
+ 
++   public C_1267_ja(C_1263_iw field_229302_a_, List<C_1261_it> field_229303_b_) {
++      this.field_229302_a_ = field_229302_a_;
++      this.field_229303_b_ = field_229303_b_;
++   }
++
+    public void func_229305_a_(long p_229305_1_) {
+       try {
+          this.func_229307_c_(p_229305_1_);
